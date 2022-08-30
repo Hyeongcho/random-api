@@ -17,8 +17,8 @@ async function getMeme() {
   json = json[0].data.children[0].data;
 
   let content = {
-    embed: {
-      color: "RANDOM",
+    embeds: {
+      color: 0x0099ff,
       image: { url: json.is_video ? "https://freepikpsd.com/wp-content/uploads/2019/10/no-image-png-5-Transparent-Images.png" : json.url },
       title: json.title
     }
